@@ -2737,8 +2737,6 @@ Wire Wire Line
 Connection ~ 5075 3925
 Wire Wire Line
 	5125 3975 5125 5150
-Wire Wire Line
-	5125 5150 5025 5150
 Connection ~ 5125 3975
 Wire Wire Line
 	4800 4125 4675 4125
@@ -3643,16 +3641,14 @@ F 3 "" H 8350 2600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 4325 7200 4325
+	4800 4325 6000 4325
 Wire Wire Line
-	5000 4275 7400 4275
+	5000 4275 6200 4275
 Wire Wire Line
-	2400 4325 4800 4325
+	2400 4325 3600 4325
 Wire Wire Line
-	2600 4275 5000 4275
+	2600 4275 3800 4275
 Connection ~ 4925 4075
-Wire Wire Line
-	4925 5250 4925 4075
 Wire Wire Line
 	1525 4625 1425 4625
 Wire Wire Line
@@ -3767,17 +3763,6 @@ Connection ~ 8675 3925
 Connection ~ 8725 3975
 Connection ~ 9275 3925
 Connection ~ 9325 3975
-$Comp
-L MX_Alps_Hybrids:MX-1U K_SPACE2
-U 1 1 5D99B6DD
-P 4900 5125
-F 0 "K_SPACE2" H 4900 5250 60  0000 C CNN
-F 1 "MX-7U" H 4900 5175 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-7U-ReversedStabilizers" H 4875 5100 60  0001 C CNN
-F 3 "" H 4875 5100 60  0001 C CNN
-	1    4900 5125
-	1    0    0    -1  
-$EndComp
 Text GLabel 8075 1975 1    50   Input ~ 0
 COL11
 Text GLabel 8675 1975 1    50   Input ~ 0
@@ -4004,4 +3989,154 @@ Connection ~ 9200 2125
 Wire Wire Line
 	9075 2175 9975 2175
 Connection ~ 9075 2175
+$Comp
+L MX_Alps_Hybrids:MX-1U K_SPLSPACE2
+U 1 1 5CEDB294
+P 4900 5750
+F 0 "K_SPLSPACE2" H 4900 5875 60  0000 C CNN
+F 1 "MX-1.25U" H 4900 5800 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-FLIPPED" H 4875 5725 60  0001 C CNN
+F 3 "" H 4875 5725 60  0001 C CNN
+	1    4900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrids:MX-1U K_SPLSPACE1
+U 1 1 5CEE4D40
+P 3700 3950
+F 0 "K_SPLSPACE1" H 3700 4075 60  0000 C CNN
+F 1 "MX-2.25U" H 3700 4000 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-ReversedStabilizers" H 3675 3925 60  0001 C CNN
+F 3 "" H 3675 3925 60  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D8
+U 1 1 5CEE4D46
+P 3600 4225
+F 0 "D8" H 3550 4305 50  0000 L CNN
+F 1 "SOD-123" H 3500 4400 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123" V 3600 4225 50  0001 C CNN
+F 3 "" V 3600 4225 50  0001 C CNN
+	1    3600 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5CEE4D4C
+P 3800 4175
+F 0 "R8" V 3875 4100 50  0000 L CNN
+F 1 "1k" V 3950 4100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3800 4175 50  0001 C CNN
+F 3 "" H 3800 4175 50  0001 C CNN
+	1    3800 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4125 3675 4125
+Wire Wire Line
+	3800 4075 3725 4075
+Wire Wire Line
+	3925 3975 3825 3975
+Wire Wire Line
+	3925 3325 3925 3975
+Wire Wire Line
+	3875 3275 3875 3925
+Connection ~ 3600 4325
+Wire Wire Line
+	3600 4325 4800 4325
+Connection ~ 3800 4275
+Wire Wire Line
+	3800 4275 5000 4275
+Connection ~ 3875 3275
+Connection ~ 3925 3325
+$Comp
+L MX_Alps_Hybrids:MX-1U K_SPLSPACE3
+U 1 1 5CF87D71
+P 6100 3950
+F 0 "K_SPLSPACE3" H 6100 4075 60  0000 C CNN
+F 1 "MX-2.75U" H 6100 4000 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.75U-ReversedStabilizers" H 6075 3925 60  0001 C CNN
+F 3 "" H 6075 3925 60  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D9
+U 1 1 5CF87D77
+P 6000 4225
+F 0 "D9" H 5950 4305 50  0000 L CNN
+F 1 "SOD-123" H 5900 4400 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123" V 6000 4225 50  0001 C CNN
+F 3 "" V 6000 4225 50  0001 C CNN
+	1    6000 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5CF87D7D
+P 6200 4175
+F 0 "R9" V 6275 4100 50  0000 L CNN
+F 1 "1k" V 6350 4100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 6200 4175 50  0001 C CNN
+F 3 "" H 6200 4175 50  0001 C CNN
+	1    6200 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4125 6075 4125
+Wire Wire Line
+	6200 4075 6125 4075
+Wire Wire Line
+	6325 3975 6225 3975
+Wire Wire Line
+	6325 3325 6325 3975
+Wire Wire Line
+	6275 3275 6275 3925
+Connection ~ 6000 4325
+Wire Wire Line
+	6000 4325 7200 4325
+Connection ~ 6200 4275
+Wire Wire Line
+	6200 4275 7400 4275
+Connection ~ 6275 3275
+Connection ~ 6325 3325
+Wire Wire Line
+	4925 5250 4925 4075
+Wire Wire Line
+	5125 5150 5025 5150
+$Comp
+L MX_Alps_Hybrids:MX-1U K_SPACE2
+U 1 1 5D99B6DD
+P 4900 5125
+F 0 "K_SPACE2" H 4900 5250 60  0000 C CNN
+F 1 "MX-7U" H 4900 5175 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-7U-ReversedStabilizers" H 4875 5100 60  0001 C CNN
+F 3 "" H 4875 5100 60  0001 C CNN
+	1    4900 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 5150 5125 5775
+Wire Wire Line
+	5125 5775 5025 5775
+Connection ~ 5125 5150
+Wire Wire Line
+	4925 5875 4925 5250
+Connection ~ 4925 5250
+Wire Wire Line
+	5075 5725 4675 5725
+Wire Wire Line
+	4675 5725 4675 5300
+Connection ~ 4675 5300
+Wire Wire Line
+	5075 5100 5075 5675
+Wire Wire Line
+	5075 5675 5175 5675
+Wire Wire Line
+	5175 5675 5175 5925
+Wire Wire Line
+	5175 5925 4875 5925
+Connection ~ 5075 5100
 $EndSCHEMATC
