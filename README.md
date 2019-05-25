@@ -1,7 +1,7 @@
 # Voyager50
 A balance between function and size
 
-![Render](https://github.com/ai03-2725/Voyager50/blob/master/Renders/Front.png)
+![Render](https://raw.githubusercontent.com/ai03-2725/Voyager50/master/Render/Front.png)
 
 [Supported layouts](http://www.keyboard-layout-editor.com/#/gists/caf09ce52668a0b0574eaae53debacd4)  
 
